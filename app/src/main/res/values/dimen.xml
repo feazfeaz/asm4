@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movies_info_block_height">170dp</dimen>
+    <dimen name="movies_info_block_width">140dp</dimen>
+
+    <dimen name="small_space">5dp</dimen>
+    <dimen name="medium_space">10dp</dimen>
+    <dimen name="big_space">15dp</dimen>
+    <dimen name="extra_space">30dp</dimen>
+
+    <dimen name="small_hight">20dp</dimen>
+    <dimen name="medium_hight">35dp</dimen>
+    <dimen name="big_hight">45dp</dimen>
+
+    <dimen name="small_text">15dp</dimen>
+    <dimen name="medium_text">25dp</dimen>
+    <dimen name="big_text">35dp</dimen>
+
+    <dimen name="box">150dp</dimen>
+    <dimen name="small_box">100dp</dimen>
+
+    <dimen name="icon">50dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TicketMovies</string>
+
+    <string name="facebook_app_id">3264793947080137</string>
+    <string name="fb_login_protocol_scheme">fb3264793947080137</string>
+
+    <string name="info">Thông tin phim</string>
+    <string name="account">Tài Khoản</string>
+
+    <string name="logout">Đăng xuất</string>
+</resources>

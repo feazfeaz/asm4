@@ -1,0 +1,172 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ticketmovies"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+8-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:7:5-36:19
+14        android:allowBackup="true"
+14-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:extractNativeLibs="false"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:12:9-35
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:13:9-40
+22        <meta-data
+22-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:14:9-107
+23            android:name="com.facebook.sdk.ApplicationId"
+23-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:14:20-65
+24            android:value="@string/facebook_app_id" />
+24-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:14:66-105
+25
+26        <activity
+26-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:15:9-18:48
+27            android:name="com.facebook.FacebookActivity"
+27-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:15:19-63
+28            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+28-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:16:13-114
+29            android:label="@string/app_name"
+29-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:18:13-45
+30            android:theme="@style/com_facebook_activity_theme" />
+30-->[com.facebook.android:facebook-common:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\4d429404615856a81a92965d1cc42f3c\jetified-facebook-common-5.0.0\AndroidManifest.xml:32:13-63
+31        <activity
+31-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:19:9-28:20
+32            android:name="com.facebook.CustomTabActivity"
+32-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:20:13-58
+33            android:exported="true" >
+33-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:21:13-36
+34            <intent-filter>
+34-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:22:13-27:29
+35                <action android:name="android.intent.action.VIEW" />
+35-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:23:17-69
+35-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:23:25-66
+36
+37                <category android:name="android.intent.category.DEFAULT" />
+37-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:24:17-76
+37-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:24:27-73
+38                <category android:name="android.intent.category.BROWSABLE" />
+38-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:25:17-78
+38-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:25:27-75
+39
+40                <data android:scheme="@string/fb_login_protocol_scheme" />
+40-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:26:17-75
+40-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:26:23-72
+41            </intent-filter>
+42        </activity>
+43        <activity android:name="com.example.ticketmovies.MainActivity" >
+43-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:29:9-35:20
+43-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:29:19-47
+44            <intent-filter>
+44-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:30:13-34:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:31:17-69
+45-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:31:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:33:17-77
+47-->C:\Users\DELL\AndroidStudioProjects\TicketMovies\app\src\main\AndroidManifest.xml:33:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity android:name="com.facebook.CustomTabMainActivity" />
+50-->[com.facebook.android:facebook-common:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\4d429404615856a81a92965d1cc42f3c\jetified-facebook-common-5.0.0\AndroidManifest.xml:33:9-71
+50-->[com.facebook.android:facebook-common:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\4d429404615856a81a92965d1cc42f3c\jetified-facebook-common-5.0.0\AndroidManifest.xml:33:19-68
+51        <activity
+51-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:23:9-27:75
+52            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+52-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:24:13-93
+53            android:excludeFromRecents="true"
+53-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:25:13-46
+54            android:exported="false"
+54-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:26:13-37
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+55-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:27:13-72
+56        <!--
+57            Service handling Google Sign-In user revocation. For apps that do not integrate with
+58            Google Sign-In, this service will never be started.
+59        -->
+60        <service
+60-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:33:9-36:110
+61            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+61-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:34:13-89
+62            android:exported="true"
+62-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:35:13-36
+63            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+63-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\30a717147c6ebeb4597261fb44801222\jetified-play-services-auth-18.0.0\AndroidManifest.xml:36:13-107
+64
+65        <activity
+65-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\045b8747f28bc0d62fc93a4a76e8a784\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+66-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\045b8747f28bc0d62fc93a4a76e8a784\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\045b8747f28bc0d62fc93a4a76e8a784\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\045b8747f28bc0d62fc93a4a76e8a784\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+69
+70        <meta-data
+70-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\b29f134720e42af45138d7c528ff08fd\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+71            android:name="com.google.android.gms.version"
+71-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\b29f134720e42af45138d7c528ff08fd\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+72            android:value="@integer/google_play_services_version" />
+72-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\b29f134720e42af45138d7c528ff08fd\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+73
+74        <provider
+74-->[com.facebook.android:facebook-marketing:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f1c43d437c6633a52393abe6e3cb79a5\jetified-facebook-marketing-5.0.0\AndroidManifest.xml:29:9-32:40
+75            android:name="com.facebook.marketing.internal.MarketingInitProvider"
+75-->[com.facebook.android:facebook-marketing:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f1c43d437c6633a52393abe6e3cb79a5\jetified-facebook-marketing-5.0.0\AndroidManifest.xml:30:13-81
+76            android:authorities="com.example.ticketmovies.MarketingInitProvider"
+76-->[com.facebook.android:facebook-marketing:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f1c43d437c6633a52393abe6e3cb79a5\jetified-facebook-marketing-5.0.0\AndroidManifest.xml:31:13-73
+77            android:exported="false" />
+77-->[com.facebook.android:facebook-marketing:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f1c43d437c6633a52393abe6e3cb79a5\jetified-facebook-marketing-5.0.0\AndroidManifest.xml:32:13-37
+78        <!--
+79         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+80         with the application context. This config is merged in with the host app's manifest,
+81         but there can only be one provider with the same authority activated at any given
+82         point; so if the end user has two or more different apps that use Facebook SDK, only the
+83         first one will be able to use the provider. To work around this problem, we use the
+84         following placeholder in the authority to identify each host application as if it was
+85         a completely different provider.
+86        -->
+87        <provider
+87-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:39:9-42:40
+88            android:name="com.facebook.internal.FacebookInitProvider"
+88-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:40:13-70
+89            android:authorities="com.example.ticketmovies.FacebookInitProvider"
+89-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:41:13-72
+90            android:exported="false" />
+90-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:42:13-37
+91
+92        <receiver
+92-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:44:9-50:20
+93            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+93-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:45:13-86
+94            android:exported="false" >
+94-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:46:13-37
+95            <intent-filter>
+95-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:47:13-49:29
+96                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+96-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:48:17-95
+96-->[com.facebook.android:facebook-core:5.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\3d687138eec9a290964ef4135ed2d100\jetified-facebook-core-5.0.0\AndroidManifest.xml:48:25-92
+97            </intent-filter>
+98        </receiver>
+99    </application>
+100
+101</manifest>
