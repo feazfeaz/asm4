@@ -91,9 +91,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         new LoadMoviesInfo().execute("https://api.androidhive.info/json/movies_2017.json");
         movieInfoAdapter = new MovieInfoAdapter(this,movies);
 
-        // change fragment, show info movies
+        // create fragment
         loginFragment = new LoginFragment(this);
         moviesInfoFragment = new MoviesInfoFragment();
+        // change fragment, show info movies
         mFragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.main_frag_content,moviesInfoFragment,"info");
@@ -116,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
-        //load user everytime
+        //load user everytime - include fb user
         updateUI(account);
 
 
@@ -264,7 +265,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
-
     }
 
     public class Movie{
