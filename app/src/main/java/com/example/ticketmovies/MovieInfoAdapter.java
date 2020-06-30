@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 public class MovieInfoAdapter extends BaseAdapter {
 
-    MainActivity mainActivity;
-    ArrayList<MainActivity.Movie> movies;
+    private MainActivity mainActivity;
+    private ArrayList<MainActivity.Movie> movies;
 
     public MovieInfoAdapter(MainActivity context, ArrayList<MainActivity.Movie> movies){
         this.mainActivity = context;

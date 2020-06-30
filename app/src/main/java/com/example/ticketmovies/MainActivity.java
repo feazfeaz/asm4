@@ -54,24 +54,23 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String EMAIL = "email";
 
-    public static SharedPreferences sharedPreferences;
-    public static boolean isLogin ;
-    public static boolean isLoginFB;
-    public static String url_pic_fb;
-    public static String account_name_fb;
-    public static String email_fb;
+    public SharedPreferences sharedPreferences;
+    public boolean isLogin ;
+    public boolean isLoginFB;
+    public String url_pic_fb;
+    public String account_name_fb;
+    public String email_fb;
 
     public static CallbackManager callbackManager;
     public static GoogleSignInClient mGoogleSignInClient;
     public static final int REQ_CODE_SIGNIN = 9001;
 
-    public static FragmentManager mFragmentManager;
-    public static LoginFragment loginFragment;
+    public FragmentManager mFragmentManager;
+    public LoginFragment loginFragment;
     public static MoviesInfoFragment moviesInfoFragment;
     public static MovieInfoAdapter movieInfoAdapter;
-    public static ArrayList<MainActivity.Movie> movies;
+    public ArrayList<MainActivity.Movie> movies;
 
     private Button main_showinfo_btn;
     private Button main_login_btn;
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         account_name_fb = sharedPreferences.getString("account_name_fb","");
         email_fb =  sharedPreferences.getString("email_fb","");
 
-        //use api to load info firm and show
+        //use api to load info film and show
         movies = new ArrayList<MainActivity.Movie>();
         new LoadMoviesInfo().execute("https://api.androidhive.info/json/movies_2017.json");
         movieInfoAdapter = new MovieInfoAdapter(this,movies);
@@ -330,7 +329,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 for (int i = 0; i < jsonArray.length() ; i++) {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
                     Bitmap bitmap = BitmapFactory.decodeStream(new java.net.URL(jsonObject.getString("image")).openStream());
-                    //show every amage we was loaded
+                    //show every image we was been loaded
                     publishProgress(new Movie(
                             jsonObject.getString("title"),
                             jsonObject.getString("price"),
