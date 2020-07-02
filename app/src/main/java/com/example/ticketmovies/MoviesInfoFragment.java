@@ -19,6 +19,7 @@ public class MoviesInfoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.fragment_movies_info,null,false);
         GridView gridView = (GridView)fragmentView.findViewById(R.id.frag_info_gridview);
+        //get adapter from main Activity
         gridView.setAdapter(MainActivity.movieInfoAdapter);
         return fragmentView;
     }

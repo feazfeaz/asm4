@@ -35,9 +35,9 @@ public class LoginFragment extends Fragment {
     Bitmap pic;
     String accountName;
     String email;
-    ImageView login_pic_imgview;
-    TextView login_account_txt;
-    TextView login_email_txt;
+    ImageView loginPicImgview;
+    TextView loginAccountTxt;
+    TextView loginEmailTxt;
 
     public LoginFragment(MainActivity mainActivity){
         this.mainActivity = mainActivity;
@@ -51,9 +51,9 @@ public class LoginFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.fragment_login,container,false);
 
-        login_pic_imgview = (ImageView)fragmentView.findViewById(R.id.login_pic_imgview);
-        login_account_txt = (TextView)fragmentView.findViewById(R.id.login_account_txt);
-        login_email_txt = (TextView)fragmentView.findViewById(R.id.login_email_txt);
+        loginPicImgview = (ImageView)fragmentView.findViewById(R.id.login_pic_imgview);
+        loginAccountTxt = (TextView)fragmentView.findViewById(R.id.login_account_txt);
+        loginEmailTxt = (TextView)fragmentView.findViewById(R.id.login_email_txt);
         //set event and permission for login facebook btn
         loginButton = fragmentView.findViewById(R.id.login_button);
         loginButton.setReadPermissions(Arrays.asList("email","public_profile"));
@@ -63,6 +63,7 @@ public class LoginFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 mainActivity.signIn();
+                //see what we got it!
                 setDataUser();
             }
         });
@@ -82,37 +83,48 @@ public class LoginFragment extends Fragment {
     }
 
     public void setDataUser(){
-        if(login_pic_imgview == null) return;
+        //view was create? if not yet ui will empty and return
+        if(loginPicImgview == null) return;
 
-        if(pic == null){
-            login_pic_imgview.setVisibility(View.GONE);
-            login_account_txt.setVisibility(View.GONE);
-            login_email_txt.setVisibility(View.GONE);
+        if(pic == null){//if data user empty
+            //nothing to show so invisibility for user view
+            loginPicImgview.setVisibility(View.GONE);
+            loginAccountTxt.setVisibility(View.GONE);
+            loginEmailTxt.setVisibility(View.GONE);
             return;
         }
-        login_pic_imgview.setVisibility(View.VISIBLE);
-        login_account_txt.setVisibility(View.VISIBLE);
-        login_email_txt.setVisibility(View.VISIBLE);
-        login_pic_imgview.setImageBitmap(pic);
-        login_account_txt.setText(accountName);
-        login_email_txt.setText(email);
+        //visibility data user view
+        loginPicImgview.setVisibility(View.VISIBLE);
+        loginAccountTxt.setVisibility(View.VISIBLE);
+        loginEmailTxt.setVisibility(View.VISIBLE);
+        //take data and give to view
+        loginPicImgview.setImageBitmap(pic);
+        loginAccountTxt.setText(accountName);
+        loginEmailTxt.setText(email);
     }
 
     public void setupButton(){
-        if(login_pic_imgview == null) return;
+        //view was create? if not yet ui will empty and return
+        if(loginPicImgview == null) return;
+        //if user is login
         if(mainActivity.isLogin){
+            //if user is login with facebook
             if(mainActivity.isLoginFB){
+                //able for fb login btn
                 loginButton.setVisibility(View.VISIBLE);
+                //sign in,out google btn will disable
                 signInButton.setVisibility(View.GONE);
                 signOutButton.setVisibility(View.GONE);
-            }else {
+            }else {//else user login with google
                 loginButton.setVisibility(View.GONE);
                 signInButton.setVisibility(View.GONE);
                 signOutButton.setVisibility(View.VISIBLE);
             }
-        }else{
+        }else{//if user !login
+            //visible both fb and google login
             loginButton.setVisibility(View.VISIBLE);
             signInButton.setVisibility(View.VISIBLE);
+            //not for logout
             signOutButton.setVisibility(View.GONE);
         }
     }

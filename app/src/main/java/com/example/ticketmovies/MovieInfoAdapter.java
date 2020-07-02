@@ -43,9 +43,13 @@ public class MovieInfoAdapter extends BaseAdapter {
     public View getView(int i, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater = mainActivity.getLayoutInflater();
         convertView = layoutInflater.inflate(R.layout.reuse_component,null);
+        //get view
         LinearLayout reuse_movies_linear = (LinearLayout)convertView.findViewById(R.id.reuse_movies_linear);
+        //set title
         ((TextView)reuse_movies_linear.findViewById(R.id.reuse_title_movie_txt)).setText(movies.get(i).getTitle().trim());
+        //set price
         ((TextView)reuse_movies_linear.findViewById(R.id.reuse_price_movie_txt)).setText(movies.get(i).getTicketPrice().trim());
+        //set pic
         ((ImageView)reuse_movies_linear.findViewById(R.id.reuse_imgview)).setImageBitmap(movies.get(i).pic);
 
         return reuse_movies_linear;
